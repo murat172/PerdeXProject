@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+/*Navbar-Sidebar*/
+.navbar {
+  background-color: #ececec !important;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 38px;
+  color: #30364f;
+  font-family: "Rubik", sans-serif;
+  margin-right: 50px !important;
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: #30364f;
+  text-decoration: none;
+}
+
+.nav-item a {
+  color: #30364f !important;
+  font-size: 21px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.sidebar-item a {
+  color: #30364f !important;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.dropdown-menu {
+  background-color: #ececec;
+  font-size: 17px;
+}
+
+.inActive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #ececec;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 90px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 15px;
+  margin-left: 50px;
+}
+
+/* slider */
+.carousel-item {
+  aspect-ratio: 21 / 9 !important;
+}
+
+/*Responsive*/
+@media (max-width: 575.98px) {
+  .logo {
+    font-size: 30px;
+    margin-right: 0px !important;
+  }
+  .inActive {
+    display: block;
+  }
+  .sidebar {
+    width: 200px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo {
+    font-size: 32px;
+    margin-right: 0px !important;
+  }
+  .inActive {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .logo {
+    font-size: 34px;
+    margin-right: 0px !important;
+  }
+  .inActive {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+}

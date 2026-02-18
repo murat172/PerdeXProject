@@ -5,6 +5,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
 /*Navbar-Sidebar*/
 .navbar {
   background-color: #ececec !important;
@@ -67,7 +68,7 @@ body {
   overflow-x: hidden;
   padding-top: 90px;
   transition: 0.5s;
-  z-index: 1;
+  z-index: 3;
 }
 
 .close {
@@ -80,7 +81,83 @@ body {
 
 /* slider */
 .carousel-item {
-  aspect-ratio: 21 / 9 !important;
+  position: relative;
+}
+
+.slide-img {
+  object-fit: cover;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+.carousel-caption h1 {
+  font-size: 42px;
+  color: #ececec;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  color: #ececec;
+  font-weight: 500;
+}
+
+.slider-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 40%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+  opacity: 1;
+}
+
+/*Sidebar Button*/
+.sidebar-btn {
+  background-color: #30364f;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sidebar-btn:hover {
+  color: #30364f;
+  border: 2px solid #30364f;
+  background-color: #ececec;
+}
+
+/*Slider Button*/
+.slider-btn {
+  background-color: #30364f;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.slider-btn:hover {
+  color: #30364f;
+  border: 2px solid #30364f;
+  background-color: #ececec;
 }
 
 /*Responsive*/
@@ -116,10 +193,29 @@ body {
   .inActive {
     display: block;
   }
+  .carousel-caption h1 {
+    font-size: 35px;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 992px) {
   .sidebar {
     display: none;
+  }
+  .h-80 {
+    height: 80vh !important;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+  .carousel-caption p {
+    font-size: 18px;
   }
 }

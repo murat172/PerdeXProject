@@ -54,7 +54,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html"
+              <a class="nav-link" aria-current="page" href="home.html#about"
                 >Hakkımızda</a
               >
             </li>
@@ -64,6 +64,10 @@
               >
             </li>
           </ul>
+        </div>
+        <div class="UserLogin">
+          <a href="#" type="button" class="navbar-btn">Log In</a>
+          <a href="#" type="button" class="navbar-btn">Sign Up</a>
         </div>
         <button
           class="inActive btn sidebar-btn"
@@ -84,6 +88,10 @@
       >
         <i class="fa-solid fa-xmark"></i>
       </button>
+      <div class="text-center mt-3 mb-3">
+        <a href="#" type="button" class="navbar-btn">Log In</a>
+        <a href="#" type="button" class="navbar-btn">Sign Up</a>
+      </div>
       <ul class="sidebar-list">
         <li class="sidebar-item"><a href="home.html">Home</a></li>
         <li class="nav-item dropdown">
@@ -115,8 +123,8 @@
       class="carousel slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-inner h-80">
-        <div class="carousel-item active">
+      <div class="carousel-inner">
+        <div class="carousel-item active h-80">
           <img
             src="img/Slider Resim 1.webp"
             class="d-block w-100 slide-img position-relative"
@@ -128,33 +136,34 @@
           <div
             class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle text-center"
           >
-            <h1>Tank</h1>
+            <h1 class="h3">Perde Açılıyor</h1>
             <p>
-              Doğu Cephesi, 1943: Bir Alman Tiger tank mürettebatı, şiddetli
-              çatışmanın yaşandığı cephenin derinliklerindeki tehlikeli bir
-              göreve gönderilir.
+              En yeni filmler, unutulmaz klasikler ve keşfedilmeyi bekleyen
+              yapımlar tek yerde.
             </p>
             <button
               type="button"
               class="btn slider-btn px-md-2 px-lg-3 px-xl-5 py-2"
             >
-              Yeni Filmler
+              Film Kategorileri
             </button>
           </div>
         </div>
       </div>
     </div>
 
-    <main>
+    <main class="mb-5">
       <!--Yeni Filmler Diziler-->
-      <h1 class="text-center fw-bold mt-5">Yeni Filmler/Diziler</h1>
+      <h1 class="text-center fw-bold mt-5 title">Yeni Filmler/Diziler</h1>
       <div class="container mt-5">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 mb-2">
-            <div class="card shadow-lg card-anim position-relative">
+            <div
+              class="card shadow-lg card-anim position-relative flex-row flex-md-column"
+            >
               <img
-                src="https://picsum.photos/200/200"
-                class="card-img-top"
+                src="img/CardREsim1.webp"
+                class="card-img-top img-fluid"
                 alt="..."
               />
               <div class="card-body">
@@ -169,10 +178,12 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-2">
-            <div class="card shadow-lg card-anim position-relative">
+            <div
+              class="card shadow-lg card-anim position-relative flex-row flex-md-column"
+            >
               <img
-                src="https://picsum.photos/200/200"
-                class="card-img-top"
+                src="img/CardResim4.webp"
+                class="card-img-top img-fluid"
                 alt="..."
               />
               <div class="card-body">
@@ -187,10 +198,12 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-2">
-            <div class="card shadow-lg card-anim position-relative">
+            <div
+              class="card shadow-lg card-anim position-relative flex-row flex-md-column"
+            >
               <img
-                src="https://picsum.photos/200/200"
-                class="card-img-top"
+                src="img/CardResim2.webp"
+                class="card-img-top img-fluid"
                 alt="..."
               />
               <div class="card-body">
@@ -205,10 +218,12 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-2">
-            <div class="card shadow-lg card-anim position-relative">
+            <div
+              class="card shadow-lg card-anim position-relative flex-row flex-md-column"
+            >
               <img
-                src="https://picsum.photos/200/200"
-                class="card-img-top"
+                src="img/CarsResim3.webp"
+                class="card-img-top img-fluid"
                 alt="..."
               />
               <div class="card-body">
@@ -226,7 +241,7 @@
       </div>
 
       <!--Kategoriler-->
-      <h1 class="text-center fw-bold mt-5 mb-4">Kategoriler</h1>
+      <h1 class="text-center fw-bold mt-5 mb-4 title">Öne Çıkan Kategoriler</h1>
       <div class="position-relative mb-3 category-animRight">
         <img
           border-radius:
@@ -281,7 +296,101 @@
           </button>
         </div>
       </div>
+      <div class="position-relative mb-3 category-animRight">
+        <img
+          border-radius:
+          5px;
+          class="poster"
+          src="img/Slider Resim 1.webp"
+          alt=""
+        />
+
+        <div class="category-overlay"></div>
+
+        <div
+          class="contents position-absolute top-50 start-50 translate-middle text-center"
+        >
+          <h1 class="h4 text-center contents-title">Komedi</h1>
+          <p class="Contents-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
+            esse.
+          </p>
+          <button
+            type="button"
+            class="btn Category-btn px-md-2 px-lg-3 px-xl-5 py-2"
+          >
+            Show More
+          </button>
+        </div>
+      </div>
     </main>
+
+    <!--About-->
+    <div class="container mt-5" id="about">
+      <h1 class="text-center fw-bold mt-5 mb-4 title">Hakkımızda</h1>
+      <p class="about-text">
+        Bu platform, film ve dizi içeriklerini tek bir yerde düzenli ve
+        erişilebilir şekilde sunmak amacıyla oluşturuldu. Amacımız;
+        kullanıcıların aradıkları yapımlara hızlıca ulaşabilmesi, içerikler
+        hakkında temel bilgilere kolayca erişebilmesi ve güncel yapımları takip
+        edebilmesidir. Sitemizde farklı türlerden filmler, öne çıkan yapımlar ve
+        yeni eklenen içerikler düzenli olarak listelenir. Her içerik için özet
+        bilgiler, kategori detayları ve görseller sunularak kullanıcı deneyimi
+        sade ve anlaşılır tutulur. Tasarım sürecinde hız, mobil uyumluluk ve
+        sade arayüz öncelik olarak belirlenmiştir. Gereksiz karmaşadan uzak,
+        doğrudan içeriğe odaklanan bir yapı hedeflenmiştir. Bu proje sürekli
+        geliştirilmektedir. Yeni özellikler ve içerikler zamanla eklenmeye devam
+        edecektir.
+      </p>
+    </div>
+
+    <!--Comments-->
+    <div class="container-fluid mt-5 commets">
+      <div class="card p-4 shadow-sm">
+        <h4 class="mb-3 text-dark comments-title">Yorumlar</h4>
+        <form id="yorum-form">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                class="form-control comments-text"
+                placeholder="Ad Soyad"
+                id="ad"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input
+                type="email"
+                class="form-control comments-text"
+                placeholder="E-posta"
+                id="email"
+              />
+            </div>
+          </div>
+
+          <textarea
+            class="form-control mb-3 comments-textarea"
+            rows="4"
+            placeholder="Yorumunuz"
+            id="yorum"
+          ></textarea>
+
+          <button type="submit" class="btn slider-btn w-100">Gönder</button>
+        </form>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="mt-5">
+      <div class="footer text-center pt-4 pb-2">
+        <a href="#" class="item"
+          ><i class="fa-brands fa-instagram fa-2x"></i
+        ></a>
+        <a href="#" class="item"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="#" class="item"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <p class="pt-2">PerdeX ©2026 All Rights Reserved</p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

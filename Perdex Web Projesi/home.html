@@ -66,8 +66,8 @@
           </ul>
         </div>
         <div class="UserLogin">
-          <a href="#" type="button" class="navbar-btn">Log In</a>
-          <a href="#" type="button" class="navbar-btn">Sign Up</a>
+          <a href="SignIn.html" type="button" class="navbar-btn">Log In</a>
+          <a href="SignUp.html" type="button" class="navbar-btn">Sign Up</a>
         </div>
         <button
           class="inActive btn sidebar-btn"
@@ -141,12 +141,18 @@
               En yeni filmler, unutulmaz klasikler ve keşfedilmeyi bekleyen
               yapımlar tek yerde.
             </p>
-            <button
-              type="button"
-              class="btn slider-btn px-md-2 px-lg-3 px-xl-5 py-2"
-            >
-              Film Kategorileri
-            </button>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Film / Dizi Arayın"
+                aria-label="Recipient’s username"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn search-btn" type="button" id="button-addon2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -242,7 +248,7 @@
 
       <!--Kategoriler-->
       <h1 class="text-center fw-bold mt-5 mb-4 title">Öne Çıkan Kategoriler</h1>
-      <div class="position-relative mb-3 category-animRight">
+      <div class="position-relative mb-3 card-anim">
         <img
           border-radius:
           5px;
@@ -269,7 +275,7 @@
           </button>
         </div>
       </div>
-      <div class="position-relative mb-3 category-animLeft">
+      <div class="position-relative mb-3 card-anim">
         <img
           border-radius:
           5px;
@@ -296,7 +302,7 @@
           </button>
         </div>
       </div>
-      <div class="position-relative mb-3 category-animRight">
+      <div class="position-relative mb-3 card-anim">
         <img
           border-radius:
           5px;
@@ -387,8 +393,10 @@
           ><i class="fa-brands fa-instagram fa-2x"></i
         ></a>
         <a href="#" class="item"><i class="fa-brands fa-facebook fa-2x"></i></a>
-        <a href="#" class="item"><i class="fa-brands fa-twitter fa-2x"></i></a>
-        <p class="pt-2">PerdeX ©2026 All Rights Reserved</p>
+        <a href="#" class="item"
+          ><i class="fa-brands fa-x-twitter fa-2x"></i
+        ></a>
+        <p>© 2026 PerdeX | Tüm hakları saklıdır.</p>
       </div>
     </footer>
 

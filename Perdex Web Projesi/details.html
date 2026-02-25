@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="details.css" />
+    <title>Film Details</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg p-2">
+      <div class="container-fluid container">
+        <a class="navbar-brand logo" href="home.html">PerdeX</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Filmler</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dram</a></li>
+                <li><a class="dropdown-item" href="#">Aksiyon</a></li>
+                <li><a class="dropdown-item" href="#">Komedi</a></li>
+                <li><a class="dropdown-item" href="#">Romantik</a></li>
+                <li><a class="dropdown-item" href="#">Bilim Kurgu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html#about">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <div class="UserLogin d-flex gap-2">
+          <a href="SignIn.html" class="navbar-btn">Log In</a>
+          <a href="SignUp.html" class="navbar-btn">Sign Up</a>
+        </div>
+        <button
+          class="inActive btn sidebar-btn"
+          type="button"
+          onclick="sidebarOpen()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar d-none" id="sidebar">
+      <button
+        class="close-btn btn sidebar-btn"
+        type="button"
+        onclick="sidebarClose()"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="text-center mt-3 mb-3">
+        <a href="#" class="navbar-btn me-1">Log In</a>
+        <a href="#" class="navbar-btn">Sign Up</a>
+      </div>
+      <ul class="sidebar-list ps-3">
+        <li class="sidebar-item"><a href="home.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Filmler</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dram</a></li>
+            <li><a class="dropdown-item" href="#">Aksiyon</a></li>
+            <li><a class="dropdown-item" href="#">Komedi</a></li>
+            <li><a class="dropdown-item" href="#">Romantik</a></li>
+            <li><a class="dropdown-item" href="#">Bilim Kurgu</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-item"><a href="home.html#about">Hakkımızda</a></li>
+        <li class="sidebar-item"><a href="contact.html">İletişim</a></li>
+      </ul>
+    </div>
+
+    <!-- DETAIL HERO -->
+    <div class="detail-hero">
+      <div class="detail-hero-bg"></div>
+      <div class="detail-hero-overlay"></div>
+      <div class="detail-hero-content">
+        <div class="container">
+          <div class="breadcrumb-area card-anim delay-1">
+            <a href="home.html">Home</a>
+            <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+            <a href="perdex-kategori.html">Bilim Kurgu</a>
+            <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="current">Interstellar</span>
+          </div>
+
+          <div class="genre-tags card-anim delay-1">
+            <span class="genre-tag">Bilim Kurgu</span>
+            <span class="genre-tag">Dram</span>
+            <span class="genre-tag">Macera</span>
+          </div>
+
+          <h1 class="film-title card-anim delay-2">INTERSTELLAR</h1>
+          <p class="film-tagline card-anim delay-2">
+            Aşk, zaman ve uzayın ötesine geçen bir yolculuk.
+          </p>
+
+          <div class="meta-row card-anim delay-3">
+            <span class="meta-item"
+              ><i class="fa-regular fa-calendar"></i> 2014</span
+            >
+            <span class="meta-dot">•</span>
+            <span class="meta-item"
+              ><i class="fa-regular fa-clock"></i> 2s 49dk</span
+            >
+            <span class="meta-dot">•</span>
+            <span class="meta-item"
+              ><i class="fa-solid fa-globe"></i> ABD · İngiltere</span
+            >
+            <span class="meta-dot">•</span>
+            <span class="meta-item"
+              ><i class="fa-solid fa-film"></i> PG-13</span
+            >
+          </div>
+
+          <div class="rating-pill card-anim delay-3">
+            <div class="rating-score">8.7</div>
+            <div class="rating-info">
+              <div class="rating-stars">★★★★★</div>
+              <div class="rating-label">IMDb · 2.1M Oy</div>
+            </div>
+            <div class="rating-ext">
+              <div class="ext-score-wrap">
+                <div class="ext-score" style="color: #f5635a">73%</div>
+                <div class="ext-label">Rotten T.</div>
+              </div>
+              <div class="ext-score-wrap">
+                <div class="ext-score" style="color: #30364f">74</div>
+                <div class="ext-label">Metascore</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 flex-wrap card-anim delay-4">
+            <a href="#" class="primary-btn"
+              ><i class="fa-solid fa-play"></i> Fragmanı İzle</a
+            >
+            <a
+              href="#"
+              class="outline-btn"
+              style="color: #ececec; border-color: #ececec"
+              ><i class="fa-solid fa-plus"></i> Listeye Ekle</a
+            >
+            <a
+              href="#"
+              class="outline-btn"
+              style="color: #ececec; border-color: #ececec"
+              ><i class="fa-solid fa-share-nodes"></i> Paylaş</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mt-5 mb-5">
+      <div class="row g-4">
+        <!-- LEFT COLUMN -->
+        <div class="col-lg-8">
+          <!-- Konu -->
+          <div class="card-anim mb-5">
+            <div class="section-title">Konu</div>
+            <p
+              style="
+                font-size: 17px;
+                color: #444;
+                line-height: 1.85;
+                font-weight: 300;
+              "
+            >
+              Dünya'nın artık insanlığa yetmediği bir gelecekte, NASA'nın gizli
+              bir projesi keşfedilir. Eski pilot
+              <strong style="color: #30364f">Cooper</strong>, bir grup bilim
+              insanıyla Satürn yakınında açılan bir solucan deliğinden geçerek
+              bilinmezin içine fırlar. Uzayın derinliklerinde zaman, fizik ve
+              sevginin sınırlarını test eden ekip, insanlığın geleceğini
+              belirleyecek verilerle yüzleşmek zorunda kalır.
+              <em>Christopher Nolan</em>'ın bu şaheserinde bir babanın
+              çocuklarına olan sevgisi galaksiler arasında titreşmeye devam
+              eder.
+            </p>
+          </div>
+
+          <!-- Teknik Bilgiler -->
+          <div class="card-anim mb-5">
+            <div class="section-title">Teknik Bilgiler</div>
+            <div class="row g-3">
+              <div class="col-6 col-md-4">
+                <div class="info-card">
+                  <div class="info-card-icon">
+                    <i class="fa-solid fa-video"></i>
+                  </div>
+                  <div class="info-card-label">Yönetmen</div>
+                  <div class="info-card-value">Christopher Nolan</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="info-card">
+                  <div class="info-card-icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                  </div>
+                  <div class="info-card-label">Senarist</div>
+                  <div class="info-card-value">Jonathan Nolan</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="info-card">
+                  <div class="info-card-icon">
+                    <i class="fa-solid fa-music"></i>
+                  </div>
+                  <div class="info-card-label">Müzik</div>
+                  <div class="info-card-value">Hans Zimmer</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="info-card">
+                  <div class="info-card-icon">
+                    <i class="fa-solid fa-camera"></i>
+                  </div>
+                  <div class="info-card-label">Görüntü Yönetmeni</div>
+                  <div class="info-card-value">Hoyte van Hoytema</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="info-card">
+                  <div class="info-card-icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                  <div class="info-card-label">Bütçe</div>
+                  <div class="info-card-value">$165 Milyon</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="info-card">
+                  <div class="info-card-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </div>
+                  <div class="info-card-label">Gişe Hasılatı</div>
+                  <div class="info-card-value">$701 Milyon</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Oyuncu Kadrosu -->
+          <div class="card-anim mb-5">
+            <div class="section-title">Oyuncu Kadrosu</div>
+            <div class="row g-3">
+              <div class="col-4 col-sm-3 col-md-2">
+                <div class="cast-card">
+                  <div class="cast-avatar">MM</div>
+                  <div class="cast-name">Matthew McConaughey</div>
+                  <div class="cast-role">Cooper</div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-3 col-md-2">
+                <div class="cast-card">
+                  <div class="cast-avatar">AH</div>
+                  <div class="cast-name">Anne Hathaway</div>
+                  <div class="cast-role">Brand</div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-3 col-md-2">
+                <div class="cast-card">
+                  <div class="cast-avatar">JC</div>
+                  <div class="cast-name">Jessica Chastain</div>
+                  <div class="cast-role">Murph</div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-3 col-md-2">
+                <div class="cast-card">
+                  <div class="cast-avatar">MC</div>
+                  <div class="cast-name">Michael Caine</div>
+                  <div class="cast-role">Prof. Brand</div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-3 col-md-2">
+                <div class="cast-card">
+                  <div class="cast-avatar">MD</div>
+                  <div class="cast-name">Matt Damon</div>
+                  <div class="cast-role">Dr. Mann</div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-3 col-md-2">
+                <div class="cast-card">
+                  <div class="cast-avatar">WB</div>
+                  <div class="cast-name">Wes Bentley</div>
+                  <div class="cast-role">Doyle</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sahneler -->
+          <div class="card-anim mb-5">
+            <div class="section-title">Sahneler</div>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="screenshot-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=800&q=80"
+                    alt="Sahne 1"
+                  />
+                  <div class="screenshot-hover">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="screenshot-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=800&q=80"
+                    alt="Sahne 2"
+                  />
+                  <div class="screenshot-hover">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="screenshot-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=800&q=80"
+                    alt="Sahne 3"
+                  />
+                  <div class="screenshot-hover">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="screenshot-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800&q=80"
+                    alt="Sahne 4"
+                  />
+                  <div class="screenshot-hover">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Değerlendirme -->
+          <div class="card-anim mb-5">
+            <div class="section-title">Değerlendirme Detayı</div>
+            <div class="col-lg-9 p-0">
+              <div class="score-row-label">
+                <span>Görsel Efektler</span><span>9.2 / 10</span>
+              </div>
+              <div class="score-track">
+                <div class="score-fill" style="width: 92%"></div>
+              </div>
+
+              <div class="score-row-label">
+                <span>Müzik & Ses</span><span>9.6 / 10</span>
+              </div>
+              <div class="score-track">
+                <div class="score-fill" style="width: 96%"></div>
+              </div>
+
+              <div class="score-row-label">
+                <span>Senaryo</span><span>8.1 / 10</span>
+              </div>
+              <div class="score-track">
+                <div class="score-fill" style="width: 81%"></div>
+              </div>
+
+              <div class="score-row-label">
+                <span>Oyunculuk</span><span>8.8 / 10</span>
+              </div>
+              <div class="score-track">
+                <div class="score-fill" style="width: 88%"></div>
+              </div>
+
+              <div class="score-row-label">
+                <span>Yönetmenlik</span><span>9.0 / 10</span>
+              </div>
+              <div class="score-track">
+                <div class="score-fill" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ödüller -->
+          <div class="card-anim mb-5">
+            <div class="section-title">Ödüller</div>
+
+            <div class="award-item">
+              <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div>
+                <div class="award-name">Academy Awards (Oscar)</div>
+                <div class="award-category">En İyi Görsel Efektler — 2015</div>
+              </div>
+              <span class="award-badge won">Kazandı</span>
+            </div>
+
+            <div class="award-item">
+              <div class="award-icon"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <div class="award-name">BAFTA Ödülleri</div>
+                <div class="award-category">En İyi Özel Görsel Efektler</div>
+              </div>
+              <span class="award-badge won">Kazandı</span>
+            </div>
+
+            <div class="award-item">
+              <div class="award-icon"><i class="fa-regular fa-star"></i></div>
+              <div>
+                <div class="award-name">Academy Awards (Oscar)</div>
+                <div class="award-category">
+                  En İyi Film Müziği — Hans Zimmer
+                </div>
+              </div>
+              <span class="award-badge nominated">Aday</span>
+            </div>
+
+            <div class="award-item">
+              <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div>
+                <div class="award-name">Saturn Awards</div>
+                <div class="award-category">En İyi Bilim Kurgu Filmi</div>
+              </div>
+              <span class="award-badge won">Kazandı</span>
+            </div>
+          </div>
+
+          <!-- Yorumlar -->
+          <div class="card-anim mb-2">
+            <div class="section-title">Eleştirmenler</div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="review-card">
+                  <div class="review-quote">"</div>
+                  <div class="review-stars">★★★★★</div>
+                  <p class="review-text">
+                    "Nolan, izleyiciyi hem duygusal hem de entelektüel olarak
+                    çarpıcı bir yolculuğa davet ediyor. Hans Zimmer'ın müziğiyle
+                    birleşince sinema tarihinin en etkileyici anlarından biri
+                    oluyor."
+                  </p>
+                  <div class="reviewer-name">Roger Ebert</div>
+                  <div class="reviewer-source">Chicago Sun-Times</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="review-card">
+                  <div class="review-quote">"</div>
+                  <div class="review-stars">★★★★☆</div>
+                  <p class="review-text">
+                    "Görsel açıdan nefes kesici. Uzayın soğukluğunu ve
+                    insanlığın umutsuzluğunu bu kadar güçlü aktaran başka bir
+                    film bulmak gerçekten güç."
+                  </p>
+                  <div class="reviewer-name">Peter Travers</div>
+                  <div class="reviewer-source">Rolling Stone</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="col-lg-4">
+          <div style="position: sticky; top: 80px">
+            <!-- Poster -->
+            <div class="poster-wrap mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1608178398319-48f814d0750c?w=500&q=80"
+                alt="Interstellar Poster"
+              />
+              <div class="poster-badge">
+                <div class="pb-score">8.7</div>
+                <div class="pb-label">IMDb</div>
+              </div>
+            </div>
+
+            <!-- Nerede İzle -->
+            <div class="sidebar-widget">
+              <div class="section-title" style="font-size: 17px">
+                Nerede İzle
+              </div>
+              <a href="#" class="platform-link">
+                <span class="pdot" style="background: #e50914"></span>
+                Netflix'te İzle
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square ms-auto"
+                  style="font-size: 11px; opacity: 0.5"
+                ></i>
+              </a>
+              <a href="#" class="platform-link">
+                <span class="pdot" style="background: #00a8e1"></span>
+                Prime Video'da İzle
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square ms-auto"
+                  style="font-size: 11px; opacity: 0.5"
+                ></i>
+              </a>
+              <a href="#" class="platform-link">
+                <span class="pdot" style="background: #f56500"></span>
+                Mubi'de İzle
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square ms-auto"
+                  style="font-size: 11px; opacity: 0.5"
+                ></i>
+              </a>
+            </div>
+
+            <!-- Film Bilgileri -->
+            <div class="sidebar-widget">
+              <div class="section-title" style="font-size: 17px">
+                Film Bilgileri
+              </div>
+              <table class="info-table">
+                <tr>
+                  <td>Orijinal Dil</td>
+                  <td>İngilizce</td>
+                </tr>
+                <tr>
+                  <td>Format</td>
+                  <td>IMAX / 35mm</td>
+                </tr>
+                <tr>
+                  <td>Yapım Şirketi</td>
+                  <td>Legendary Pictures</td>
+                </tr>
+                <tr>
+                  <td>Dağıtım</td>
+                  <td>Warner Bros.</td>
+                </tr>
+                <tr>
+                  <td>Çıkış Tarihi</td>
+                  <td>7 Kasım 2014</td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Aksiyonlar -->
+            <div class="d-flex flex-column gap-2">
+              <button
+                class="primary-btn justify-content-center"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fa-solid fa-heart"></i> Favorilere Ekle
+              </button>
+              <button
+                class="outline-btn justify-content-center"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fa-solid fa-star"></i> Puan Ver
+              </button>
+              <button
+                class="outline-btn justify-content-center"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fa-regular fa-comment"></i> Yorum Yaz
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        <p>© 2026 PerdeX | Tüm hakları saklıdır.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function sidebarOpen() {
+        const sb = document.getElementById("sidebar");
+        sb.classList.remove("d-none");
+      }
+      function sidebarClose() {
+        const sb = document.getElementById("sidebar");
+        sb.classList.add("d-none");
+      }
+    </script>
+  </body>
+</html>

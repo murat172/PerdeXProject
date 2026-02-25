@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="category.css" />
+    <title>Category</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg p-2">
+      <div class="container-fluid container">
+        <a class="navbar-brand logo" href="home.html">PerdeX</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Filmler</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dram</a></li>
+                <li><a class="dropdown-item" href="#">Aksiyon</a></li>
+                <li><a class="dropdown-item" href="#">Komedi</a></li>
+                <li><a class="dropdown-item" href="#">Romantik</a></li>
+                <li><a class="dropdown-item" href="#">Bilim Kurgu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html#about">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <div class="UserLogin d-flex gap-2">
+          <a href="SignIn.html" class="navbar-btn">Log In</a>
+          <a href="SignUp.html" class="navbar-btn">Sign Up</a>
+        </div>
+        <button
+          class="inActive btn sidebar-btn"
+          type="button"
+          onclick="sidebarOpen()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar d-none" id="sidebar">
+      <button
+        class="close-btn btn sidebar-btn"
+        type="button"
+        onclick="sidebarClose()"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="text-center mt-3 mb-3">
+        <a href="#" class="navbar-btn me-1">Log In</a>
+        <a href="#" class="navbar-btn">Sign Up</a>
+      </div>
+      <ul class="sidebar-list ps-3">
+        <li class="sidebar-item"><a href="home.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            >Filmler</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dram</a></li>
+            <li><a class="dropdown-item" href="#">Aksiyon</a></li>
+            <li><a class="dropdown-item" href="#">Komedi</a></li>
+            <li><a class="dropdown-item" href="#">Romantik</a></li>
+            <li><a class="dropdown-item" href="#">Bilim Kurgu</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-item"><a href="home.html#about">Hakkımızda</a></li>
+        <li class="sidebar-item"><a href="contact.html">İletişim</a></li>
+      </ul>
+    </div>
+
+    <!-- CATEGORY HERO -->
+    <div class="cat-hero">
+      <div class="cat-hero-bg"></div>
+      <div class="cat-hero-overlay"></div>
+      <div class="cat-hero-overlay-h"></div>
+      <div class="cat-hero-content">
+        <div class="container">
+          <div class="breadcrumb-area card-anim delay-1">
+            <a href="home.html">Home</a>
+            <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+            <a href="#">Kategoriler</a>
+            <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="current">Bilim Kurgu</span>
+          </div>
+
+          <h1 class="cat-title card-anim delay-2">BİLİM KURGU</h1>
+          <p class="cat-desc card-anim delay-2">
+            Gerçekliğin sınırlarını zorlayan, hayal gücünü evrenin ucuna taşıyan
+            filmler.
+          </p>
+
+          <div class="cat-stats card-anim delay-3">
+            <div>
+              <div class="cat-stat-num">1.248</div>
+              <div class="cat-stat-label">Film</div>
+            </div>
+            <div class="stat-sep"></div>
+            <div>
+              <div class="cat-stat-num">8.2</div>
+              <div class="cat-stat-label">Ort. Puan</div>
+            </div>
+            <div class="stat-sep"></div>
+            <div>
+              <div class="cat-stat-num">94K</div>
+              <div class="cat-stat-label">Takipçi</div>
+            </div>
+            <div class="stat-sep"></div>
+            <div>
+              <div class="cat-stat-num">12</div>
+              <div class="cat-stat-label">Alt Kategori</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB-GENRE BAR -->
+    <div class="sub-genre-bar">
+      <div class="container">
+        <div class="genre-chips">
+          <a href="#" class="genre-chip active">Tümü</a>
+          <a href="#" class="genre-chip">Uzay</a>
+          <a href="#" class="genre-chip">Distopya</a>
+          <a href="#" class="genre-chip">Siberpunk</a>
+          <a href="#" class="genre-chip">Zaman Yolculuğu</a>
+          <a href="#" class="genre-chip">Yapay Zeka</a>
+          <a href="#" class="genre-chip">Uzaylılar</a>
+          <a href="#" class="genre-chip">Post-Apokaliptik</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="container mt-4 mb-5">
+      <!-- TOOLBAR -->
+      <div class="toolbar">
+        <div class="toolbar-inner">
+          <div class="result-count">
+            <strong>1.248</strong> film listeleniyor
+          </div>
+          <div class="d-flex align-items-center gap-2 flex-wrap">
+            <button class="filter-btn-sm">
+              <i class="fa-solid fa-sliders"></i> Filtrele
+            </button>
+            <select class="sort-select">
+              <option>Popülerliğe Göre</option>
+              <option>Puana Göre (↓)</option>
+              <option>Puana Göre (↑)</option>
+              <option>Yıla Göre (Yeni)</option>
+              <option>Yıla Göre (Eski)</option>
+              <option>Alfabetik</option>
+            </select>
+            <div class="view-toggle">
+              <button
+                class="view-btn active"
+                id="gridBtn"
+                onclick="setView('grid')"
+              >
+                <i class="fa-solid fa-th"></i>
+              </button>
+              <button class="view-btn" id="listBtn" onclick="setView('list')">
+                <i class="fa-solid fa-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- LEFT: Content Area -->
+        <div class="col-lg-8 col-xl-9">
+          <!-- Featured -->
+          <h2
+            class="fw-bold title mb-3"
+            style="
+              font-size: 20px;
+              color: #30364f;
+              border-left: 4px solid #30364f;
+              padding-left: 12px;
+            "
+          >
+            Editörün Seçimi
+          </h2>
+
+          <div class="featured-card card-anim">
+            <div
+              class="featured-bg"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1400&q=80&quot;);
+              "
+            ></div>
+            <div class="featured-overlay"></div>
+            <div class="featured-content">
+              <div class="featured-badge">Öne Çıkan Film</div>
+              <div class="featured-title">INTERSTELLAR</div>
+              <div class="featured-meta">
+                <span class="frating"
+                  ><i class="fa-solid fa-star" style="font-size: 11px"></i>
+                  8.7</span
+                >
+                <span class="sep">•</span>
+                <span>2014</span>
+                <span class="sep">•</span>
+                <span>2s 49dk</span>
+                <span class="sep">•</span>
+                <span>Christopher Nolan</span>
+              </div>
+              <div class="featured-desc">
+                İnsanlığın son umudu için galaksiler ötesine yolculuk eden bir
+                babanın epik hikayesi.
+              </div>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="perdex-detay.html" class="primary-btn"
+                  ><i class="fa-solid fa-circle-info"></i> Detaylar</a
+                >
+                <a
+                  href="#"
+                  class="outline-btn"
+                  style="border-color: rgba(236, 236, 236, 0.5); color: #ececec"
+                  ><i class="fa-solid fa-plus"></i> Listeye Ekle</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Tüm Filmler -->
+          <h2
+            class="fw-bold mb-3 mt-4"
+            style="
+              font-size: 20px;
+              color: #30364f;
+              border-left: 4px solid #30364f;
+              padding-left: 12px;
+            "
+          >
+            Tüm Filmler
+          </h2>
+
+          <!-- GRID VIEW -->
+          <div id="gridView">
+            <div class="row g-3">
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1608178398319-48f814d0750c?w=400&q=80"
+                      alt="2001"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <span class="film-card-badge top-badge">TOP 10</span>
+                    <div class="film-card-rating">8.3</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Uzay · Dram</div>
+                    <div class="film-card-title">2001: A Space Odyssey</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 1968</span>
+                      <span><i class="fa-regular fa-clock"></i> 2s 21dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1620778182530-b00ac4e4f95c?w=400&q=80"
+                      alt="Blade Runner"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <span class="film-card-badge top-badge">TOP 10</span>
+                    <div class="film-card-rating">8.1</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Siberpunk · Noir</div>
+                    <div class="film-card-title">Blade Runner 2049</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 2017</span>
+                      <span><i class="fa-regular fa-clock"></i> 2s 44dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&q=80"
+                      alt="Arrival"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <span class="film-card-badge new-badge">YENİ</span>
+                    <div class="film-card-rating">7.9</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Uzaylılar · Dram</div>
+                    <div class="film-card-title">Arrival</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 2016</span>
+                      <span><i class="fa-regular fa-clock"></i> 1s 56dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&q=80"
+                      alt="Dune"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <div class="film-card-rating">8.0</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Epik · Uzay</div>
+                    <div class="film-card-title">Dune: Part Two</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 2024</span>
+                      <span><i class="fa-regular fa-clock"></i> 2s 46dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=400&q=80"
+                      alt="The Matrix"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <span class="film-card-badge classic-badge">KLASİK</span>
+                    <div class="film-card-rating">8.7</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Siberpunk · Aksiyon</div>
+                    <div class="film-card-title">The Matrix</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 1999</span>
+                      <span><i class="fa-regular fa-clock"></i> 2s 16dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=400&q=80"
+                      alt="Gravity"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <div class="film-card-rating">7.7</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Uzay · Gerilim</div>
+                    <div class="film-card-title">Gravity</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 2013</span>
+                      <span><i class="fa-regular fa-clock"></i> 1s 31dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=400&q=80"
+                      alt="Inception"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <span class="film-card-badge top-badge">TOP 10</span>
+                    <div class="film-card-rating">8.8</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Zihin · Aksiyon</div>
+                    <div class="film-card-title">Inception</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 2010</span>
+                      <span><i class="fa-regular fa-clock"></i> 2s 28dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="film-card card-anim">
+                  <div class="film-card-poster">
+                    <img
+                      src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=400&q=80"
+                      alt="Ex Machina"
+                    />
+                    <div class="film-card-hover">
+                      <a href="perdex-detay.html" class="hover-btn"
+                        ><i class="fa-solid fa-circle-info"></i> Detay</a
+                      >
+                      <button class="hover-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+                    <span class="film-card-badge new-badge">YENİ</span>
+                    <div class="film-card-rating">7.7</div>
+                  </div>
+                  <div class="film-card-body">
+                    <div class="film-card-genre">Yapay Zeka · Dram</div>
+                    <div class="film-card-title">Ex Machina</div>
+                    <div class="film-card-meta">
+                      <span><i class="fa-regular fa-calendar"></i> 2014</span>
+                      <span><i class="fa-regular fa-clock"></i> 1s 48dk</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LIST VIEW -->
+          <div id="listView" style="display: none">
+            <div class="film-list-item">
+              <div class="film-list-poster">
+                <img
+                  src="https://images.unsplash.com/photo-1608178398319-48f814d0750c?w=200&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="film-list-body">
+                <div
+                  class="film-card-genre"
+                  style="
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #30364f;
+                    opacity: 0.65;
+                    margin-bottom: 4px;
+                  "
+                >
+                  Uzay · Dram
+                </div>
+                <div class="film-list-title">2001: A Space Odyssey</div>
+                <div class="film-list-desc">
+                  Jüpiter'e doğru gerçekleştirilen yolculukta yapay zeka HAL
+                  9000 ile yaşanan varoluşsal çatışma.
+                </div>
+                <div
+                  class="film-card-meta"
+                  style="display: flex; gap: 10px; flex-wrap: wrap"
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i
+                      class="fa-regular fa-calendar"
+                      style="font-size: 10px"
+                    ></i>
+                    1968</span
+                  >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i class="fa-solid fa-user" style="font-size: 10px"></i>
+                    Stanley Kubrick</span
+                  >
+                </div>
+              </div>
+              <div class="film-list-actions">
+                <div>
+                  <div class="list-score">8.3</div>
+                  <div class="list-score-label">IMDb</div>
+                </div>
+                <a
+                  href="perdex-detay.html"
+                  class="primary-btn"
+                  style="padding: 8px 14px; font-size: 12px"
+                  >Detay</a
+                >
+              </div>
+            </div>
+
+            <div class="film-list-item">
+              <div class="film-list-poster">
+                <img
+                  src="https://images.unsplash.com/photo-1620778182530-b00ac4e4f95c?w=200&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="film-list-body">
+                <div
+                  class="film-card-genre"
+                  style="
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #30364f;
+                    opacity: 0.65;
+                    margin-bottom: 4px;
+                  "
+                >
+                  Siberpunk · Noir
+                </div>
+                <div class="film-list-title">Blade Runner 2049</div>
+                <div class="film-list-desc">
+                  Yıl 2049. Bir blade runner, toplumu alt üst edecek bir sır
+                  keşfeder.
+                </div>
+                <div
+                  class="film-card-meta"
+                  style="display: flex; gap: 10px; flex-wrap: wrap"
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i
+                      class="fa-regular fa-calendar"
+                      style="font-size: 10px"
+                    ></i>
+                    2017</span
+                  >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i class="fa-solid fa-user" style="font-size: 10px"></i>
+                    Denis Villeneuve</span
+                  >
+                </div>
+              </div>
+              <div class="film-list-actions">
+                <div>
+                  <div class="list-score">8.1</div>
+                  <div class="list-score-label">IMDb</div>
+                </div>
+                <a
+                  href="perdex-detay.html"
+                  class="primary-btn"
+                  style="padding: 8px 14px; font-size: 12px"
+                  >Detay</a
+                >
+              </div>
+            </div>
+
+            <div class="film-list-item">
+              <div class="film-list-poster">
+                <img
+                  src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=200&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="film-list-body">
+                <div
+                  class="film-card-genre"
+                  style="
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #30364f;
+                    opacity: 0.65;
+                    margin-bottom: 4px;
+                  "
+                >
+                  Siberpunk · Aksiyon
+                </div>
+                <div class="film-list-title">The Matrix</div>
+                <div class="film-list-desc">
+                  Gerçeklik nedir? Neo, insanlığın makineler tarafından
+                  köleleştirildiği bir gerçekle yüzleşir.
+                </div>
+                <div
+                  class="film-card-meta"
+                  style="display: flex; gap: 10px; flex-wrap: wrap"
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i
+                      class="fa-regular fa-calendar"
+                      style="font-size: 10px"
+                    ></i>
+                    1999</span
+                  >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i class="fa-solid fa-user" style="font-size: 10px"></i>
+                    Wachowski Kardeşler</span
+                  >
+                </div>
+              </div>
+              <div class="film-list-actions">
+                <div>
+                  <div class="list-score">8.7</div>
+                  <div class="list-score-label">IMDb</div>
+                </div>
+                <a
+                  href="perdex-detay.html"
+                  class="primary-btn"
+                  style="padding: 8px 14px; font-size: 12px"
+                  >Detay</a
+                >
+              </div>
+            </div>
+
+            <div class="film-list-item">
+              <div class="film-list-poster">
+                <img
+                  src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=200&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="film-list-body">
+                <div
+                  class="film-card-genre"
+                  style="
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #30364f;
+                    opacity: 0.65;
+                    margin-bottom: 4px;
+                  "
+                >
+                  Zihin · Aksiyon
+                </div>
+                <div class="film-list-title">Inception</div>
+                <div class="film-list-desc">
+                  Rüyaların içine sızarak fikir çalan bir hırsızın son ve en
+                  büyük görevi.
+                </div>
+                <div
+                  class="film-card-meta"
+                  style="display: flex; gap: 10px; flex-wrap: wrap"
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i
+                      class="fa-regular fa-calendar"
+                      style="font-size: 10px"
+                    ></i>
+                    2010</span
+                  >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i class="fa-solid fa-user" style="font-size: 10px"></i>
+                    Christopher Nolan</span
+                  >
+                </div>
+              </div>
+              <div class="film-list-actions">
+                <div>
+                  <div class="list-score">8.8</div>
+                  <div class="list-score-label">IMDb</div>
+                </div>
+                <a
+                  href="perdex-detay.html"
+                  class="primary-btn"
+                  style="padding: 8px 14px; font-size: 12px"
+                  >Detay</a
+                >
+              </div>
+            </div>
+
+            <div class="film-list-item">
+              <div class="film-list-poster">
+                <img
+                  src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=200&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="film-list-body">
+                <div
+                  class="film-card-genre"
+                  style="
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #30364f;
+                    opacity: 0.65;
+                    margin-bottom: 4px;
+                  "
+                >
+                  Epik · Uzay
+                </div>
+                <div class="film-list-title">Dune: Part Two</div>
+                <div class="film-list-desc">
+                  Paul Atreides, Arrakis'in derinliklerinde kaderini ve gücünü
+                  keşfeder.
+                </div>
+                <div
+                  class="film-card-meta"
+                  style="display: flex; gap: 10px; flex-wrap: wrap"
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i
+                      class="fa-regular fa-calendar"
+                      style="font-size: 10px"
+                    ></i>
+                    2024</span
+                  >
+                  <span
+                    style="
+                      font-size: 12px;
+                      color: #888;
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                    "
+                    ><i class="fa-solid fa-user" style="font-size: 10px"></i>
+                    Denis Villeneuve</span
+                  >
+                </div>
+              </div>
+              <div class="film-list-actions">
+                <div>
+                  <div class="list-score">8.0</div>
+                  <div class="list-score-label">IMDb</div>
+                </div>
+                <a
+                  href="perdex-detay.html"
+                  class="primary-btn"
+                  style="padding: 8px 14px; font-size: 12px"
+                  >Detay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- PAGINATION -->
+          <div class="pagination-wrap">
+            <a href="#" class="page-btn wide"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <span class="page-dots">···</span>
+            <a href="#" class="page-btn">48</a>
+            <a href="#" class="page-btn wide"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-4 col-xl-3">
+          <!-- Top 5 -->
+          <div class="sidebar-widget">
+            <div class="section-title" style="font-size: 17px">
+              Bu Haftanın En İyileri
+            </div>
+            <div class="top-film-row">
+              <div class="top-rank gold">1</div>
+              <div class="top-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1608178398319-48f814d0750c?w=100&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="top-film-title">Interstellar</div>
+                <div class="top-film-year">2014 · Nolan</div>
+              </div>
+              <div class="top-film-score">8.7</div>
+            </div>
+            <div class="top-film-row">
+              <div class="top-rank gold">2</div>
+              <div class="top-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=100&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="top-film-title">Inception</div>
+                <div class="top-film-year">2010 · Nolan</div>
+              </div>
+              <div class="top-film-score">8.8</div>
+            </div>
+            <div class="top-film-row">
+              <div class="top-rank">3</div>
+              <div class="top-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=100&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="top-film-title">The Matrix</div>
+                <div class="top-film-year">1999 · Wachowski</div>
+              </div>
+              <div class="top-film-score">8.7</div>
+            </div>
+            <div class="top-film-row">
+              <div class="top-rank">4</div>
+              <div class="top-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1620778182530-b00ac4e4f95c?w=100&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="top-film-title">Blade Runner 2049</div>
+                <div class="top-film-year">2017 · Villeneuve</div>
+              </div>
+              <div class="top-film-score">8.1</div>
+            </div>
+            <div class="top-film-row">
+              <div class="top-rank">5</div>
+              <div class="top-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=100&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="top-film-title">Dune: Part Two</div>
+                <div class="top-film-year">2024 · Villeneuve</div>
+              </div>
+              <div class="top-film-score">8.0</div>
+            </div>
+          </div>
+
+          <!-- Döneme Göre -->
+          <div class="sidebar-widget">
+            <div class="section-title" style="font-size: 17px">Döneme Göre</div>
+            <div class="decade-pills">
+              <button class="decade-pill active">Tümü</button>
+              <button class="decade-pill">2020s</button>
+              <button class="decade-pill">2010s</button>
+              <button class="decade-pill">2000s</button>
+              <button class="decade-pill">1990s</button>
+              <button class="decade-pill">1980s</button>
+              <button class="decade-pill">Klasikler</button>
+            </div>
+          </div>
+
+          <!-- Kategori Puanları -->
+          <div class="sidebar-widget">
+            <div class="section-title" style="font-size: 17px">
+              Kategori Ortalamaları
+            </div>
+            <div class="mini-bar-row">
+              <span>IMDb Ortalaması</span><span>8.2</span>
+            </div>
+            <div class="mini-track">
+              <div class="mini-fill" style="width: 82%"></div>
+            </div>
+            <div class="mini-bar-row">
+              <span>Rotten Tomatoes</span><span>78%</span>
+            </div>
+            <div class="mini-track">
+              <div class="mini-fill" style="width: 78%"></div>
+            </div>
+            <div class="mini-bar-row">
+              <span>Kullanıcı Puanı</span><span>8.5</span>
+            </div>
+            <div class="mini-track">
+              <div class="mini-fill" style="width: 85%"></div>
+            </div>
+            <div class="mini-bar-row">
+              <span>Eleştirmen Puanı</span><span>7.9</span>
+            </div>
+            <div class="mini-track">
+              <div class="mini-fill" style="width: 79%"></div>
+            </div>
+          </div>
+
+          <!-- Diğer Kategoriler -->
+          <div class="sidebar-widget">
+            <div class="section-title" style="font-size: 17px">
+              Diğer Kategoriler
+            </div>
+            <a href="#" class="cat-link"
+              >Dram <span class="cat-link-count">2.4K</span></a
+            >
+            <a href="#" class="cat-link"
+              >Aksiyon <span class="cat-link-count">3.2K</span></a
+            >
+            <a href="#" class="cat-link"
+              >Gerilim <span class="cat-link-count">1.8K</span></a
+            >
+            <a href="#" class="cat-link"
+              >Komedi <span class="cat-link-count">2.1K</span></a
+            >
+            <a href="#" class="cat-link"
+              >Korku <span class="cat-link-count">1.1K</span></a
+            >
+            <a href="#" class="cat-link"
+              >Animasyon <span class="cat-link-count">890</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        <p>© 2026 PerdeX | Tüm hakları saklıdır.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function sidebarOpen() {
+        document.getElementById("sidebar").classList.remove("d-none");
+      }
+      function sidebarClose() {
+        document.getElementById("sidebar").classList.add("d-none");
+      }
+
+      function setView(mode) {
+        const grid = document.getElementById("gridView");
+        const list = document.getElementById("listView");
+        const gBtn = document.getElementById("gridBtn");
+        const lBtn = document.getElementById("listBtn");
+        if (mode === "grid") {
+          grid.style.display = "block";
+          list.style.display = "none";
+          gBtn.classList.add("active");
+          lBtn.classList.remove("active");
+        } else {
+          grid.style.display = "none";
+          list.style.display = "block";
+          gBtn.classList.remove("active");
+          lBtn.classList.add("active");
+        }
+      }
+
+      document.querySelectorAll(".genre-chip").forEach((chip) => {
+        chip.addEventListener("click", (e) => {
+          e.preventDefault();
+          document
+            .querySelectorAll(".genre-chip")
+            .forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+        });
+      });
+
+      document.querySelectorAll(".decade-pill").forEach((pill) => {
+        pill.addEventListener("click", () => {
+          document
+            .querySelectorAll(".decade-pill")
+            .forEach((p) => p.classList.remove("active"));
+          pill.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

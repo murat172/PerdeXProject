@@ -43,7 +43,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Filmler
+                Kategoriler
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="category.html">Dram</a></li>
@@ -250,7 +250,7 @@
 
       <!--Kategoriler-->
       <h1 class="text-center fw-bold mt-5 mb-4 title">Öne Çıkan Kategoriler</h1>
-      <div class="position-relative mb-3 card-anim">
+      <div class="position-relative mb-3 card-category-animLeft">
         <img
           border-radius:
           5px;
@@ -277,7 +277,7 @@
           </button>
         </div>
       </div>
-      <div class="position-relative mb-3 card-anim">
+      <div class="position-relative mb-3 card-category-animRight">
         <img
           border-radius:
           5px;
@@ -304,7 +304,7 @@
           </button>
         </div>
       </div>
-      <div class="position-relative mb-3 card-anim">
+      <div class="position-relative mb-3 card-category-animLeft">
         <img
           border-radius:
           5px;
@@ -362,11 +362,19 @@
               <input
                 type="text"
                 class="form-control comments-text"
-                placeholder="Ad Soyad"
+                placeholder="Ad"
                 id="ad"
               />
             </div>
             <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                class="form-control comments-text"
+                placeholder="Soyad"
+                id="soyad"
+              />
+            </div>
+            <div class="col mb-3">
               <input
                 type="email"
                 class="form-control comments-text"
@@ -391,14 +399,20 @@
     <!--Footer-->
     <footer class="mt-5">
       <div class="footer text-center pt-4 pb-2">
-        <a href="#" class="item"
-          ><i class="fa-brands fa-instagram fa-2x"></i
-        ></a>
-        <a href="#" class="item"><i class="fa-brands fa-facebook fa-2x"></i></a>
-        <a href="#" class="item"
-          ><i class="fa-brands fa-x-twitter fa-2x"></i
-        ></a>
-        <p>© 2026 PerdeX | Tüm hakları saklıdır.</p>
+        <div class="mb-2">
+          <a href="#" class="item"
+            ><i class="fa-brands fa-instagram fa-2x"></i
+          ></a>
+          <a href="#" class="item"
+            ><i class="fa-brands fa-facebook fa-2x"></i
+          ></a>
+          <a href="#" class="item"
+            ><i class="fa-brands fa-x-twitter fa-2x"></i
+          ></a>
+        </div>
+        <div>
+          <p>© 2026 PerdeX | Tüm hakları saklıdır.</p>
+        </div>
       </div>
     </footer>
 

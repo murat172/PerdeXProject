@@ -1059,50 +1059,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function sidebarOpen() {
-        document.getElementById("sidebar").classList.remove("d-none");
-      }
-      function sidebarClose() {
-        document.getElementById("sidebar").classList.add("d-none");
-      }
-
-      function setView(mode) {
-        const grid = document.getElementById("gridView");
-        const list = document.getElementById("listView");
-        const gBtn = document.getElementById("gridBtn");
-        const lBtn = document.getElementById("listBtn");
-        if (mode === "grid") {
-          grid.style.display = "block";
-          list.style.display = "none";
-          gBtn.classList.add("active");
-          lBtn.classList.remove("active");
-        } else {
-          grid.style.display = "none";
-          list.style.display = "block";
-          gBtn.classList.remove("active");
-          lBtn.classList.add("active");
-        }
-      }
-
-      document.querySelectorAll(".genre-chip").forEach((chip) => {
-        chip.addEventListener("click", (e) => {
-          e.preventDefault();
-          document
-            .querySelectorAll(".genre-chip")
-            .forEach((c) => c.classList.remove("active"));
-          chip.classList.add("active");
-        });
-      });
-
-      document.querySelectorAll(".decade-pill").forEach((pill) => {
-        pill.addEventListener("click", () => {
-          document
-            .querySelectorAll(".decade-pill")
-            .forEach((p) => p.classList.remove("active"));
-          pill.classList.add("active");
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

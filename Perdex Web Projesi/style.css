@@ -241,6 +241,27 @@ body {
     transform: translateY(0);
   }
 }
+.card-category-animLeft {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 1.5s ease;
+}
+
+.card-category-animRight {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 1.5s ease;
+}
+
+.showRight {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /*Kategoriler*/
 .poster {
